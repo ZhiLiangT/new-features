@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="omeng.bbwhm.com.weixin.ClipppingActivity"
+    tools:showIn="@layout/activity_clippping">
+
+
+    <ImageView
+        android:id="@+id/clipp_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:tint="@color/colorAccent"
+        android:tintMode="screen"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="36dp" />
+
+    <ImageView
+        android:id="@+id/clipp_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="@color/colorAccent"
+        android:tintMode="add"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_alignTop="@+id/clipp_1"
+        android:layout_toEndOf="@+id/clipp_1"
+        android:layout_marginStart="35dp" />
+
+    <ImageView
+        android:id="@+id/clipp_3"
+        android:tint="@color/colorAccent"
+        android:tintMode="multiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_marginStart="35dp"
+        android:layout_alignTop="@+id/clipp_4"
+        android:layout_toEndOf="@+id/clipp_4" />
+
+    <ImageView
+        android:id="@+id/clipp_4"
+        android:tint="@color/colorAccent"
+        android:tintMode="src_atop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_alignTop="@+id/clipp_2"
+        android:layout_toEndOf="@+id/clipp_2"
+        android:layout_marginStart="44dp" />
+
+    <ImageView
+        android:id="@+id/clipp_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/clipp_1"
+        android:layout_below="@+id/clipp_1"
+        android:tint="@color/colorAccent"
+        android:tintMode="src_in"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/clipp_6"
+        android:tint="@color/colorAccent"
+        android:tintMode="src_over"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/clipp_5"
+        android:layout_alignEnd="@+id/clipp_2"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/clipp_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/clipp_4"
+        android:layout_alignTop="@+id/clipp_6"
+        app:srcCompat="@mipmap/test1"
+        android:layout_alignBottom="@+id/clipp_6"
+        android:layout_alignEnd="@+id/clipp_4" />
+
+    <ImageView
+        android:id="@+id/clipp_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/clipp_3"
+        android:layout_alignTop="@+id/clipp_7"
+        app:srcCompat="@mipmap/test1"
+        android:layout_alignBottom="@+id/clipp_7"
+        android:layout_alignEnd="@+id/clipp_3" />
+</RelativeLayout>

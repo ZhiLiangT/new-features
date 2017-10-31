@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/colorAccent">
+    <!--<item android:id="@android:id/mask"-->
+        <!--android:drawable="@android:color/white" />-->
+    <!--<item android:id="@android:id/mask"-->
+        <!--android:drawable="@mipmap/ic_launcher" />-->
+    <!--<item-->
+        <!--android:id="@android:id/mask"-->
+        <!--android:drawable="@drawable/shape"/>-->
+    <item>
+        <selector>
+            <item
+                android:drawable="@drawable/camera"
+                android:state_pressed="true">
+            </item>
+            <item
+                android:drawable="@drawable/folders"
+                android:state_pressed="false">
+            </item>
+        </selector>
+    </item>
+</ripple>

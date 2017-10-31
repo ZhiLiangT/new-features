@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="omeng.bbwhm.com.weixin.RippleActivity"
+    tools:showIn="@layout/activity_ripple">
+
+    <Button
+        android:id="@+id/ripp_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="49dp"
+        android:background="@drawable/ripple_color"
+        android:text="color" />
+
+    <Button
+        android:id="@+id/ripp_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ripp_color"
+        android:layout_marginStart="58dp"
+        android:layout_toEndOf="@+id/ripp_color"
+        android:background="@drawable/ripple_img"
+        android:text="image" />
+
+    <Button
+        android:id="@+id/ripp_shap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ripp_color"
+        android:layout_marginTop="61dp"
+        android:layout_toStartOf="@+id/ripp_img"
+        android:background="@drawable/ripple_shap"
+        android:text="shap" />
+
+    <Button
+        android:id="@+id/ripp_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ripp_img"
+        android:layout_alignTop="@+id/ripp_shap"
+        android:background="@drawable/ripple_selector"
+        android:text="selector" />
+</RelativeLayout>
