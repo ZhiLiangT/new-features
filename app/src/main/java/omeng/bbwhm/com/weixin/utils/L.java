@@ -1,4 +1,4 @@
-package omeng.bbwhm.com.weixin;
+package omeng.bbwhm.com.weixin.utils;
 
 import android.util.Log;
 

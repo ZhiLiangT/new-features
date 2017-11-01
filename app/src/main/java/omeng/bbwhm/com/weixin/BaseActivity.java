@@ -5,6 +5,8 @@ import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
+import omeng.bbwhm.com.weixin.utils.L;
+
 
 /**
  * Created by tianzl on 2017/10/30.

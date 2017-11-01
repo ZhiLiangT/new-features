@@ -19,43 +19,50 @@
         tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentStart="true" />
 
     <Button
         android:id="@+id/bt2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/bt1"
-        android:layout_below="@+id/bt1"
-        android:layout_marginTop="46dp"
-        android:text="Ripple" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/bt2"
-        android:layout_below="@+id/bt2"
-        android:layout_marginTop="44dp"
-        android:text="Button" />
+        android:text="Ripple"
+        android:layout_marginStart="11dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/bt1" />
 
     <Button
         android:id="@+id/bt3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button3"
-        android:layout_below="@+id/button3"
-        android:layout_marginTop="63dp"
-        android:text="Button" />
+        android:text="事件分发"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/bt2"
+        android:layout_marginStart="11dp" />
 
     <Button
         android:id="@+id/bt4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/bt3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="47dp"
-        android:text="Button" />
+        android:text="自定义View"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/bt3" />
+
+    <Button
+        android:id="@+id/bt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="视频播放"
+        android:layout_below="@+id/bt1"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/bt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/bt2"
+        android:layout_alignTop="@+id/bt5"
+        android:text="图片处理" />
 
 
 </RelativeLayout>

@@ -17,14 +17,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ClipppingActivity"
+            android:name=".ui_characteristic.ClipppingActivity"
             android:label="@string/title_activity_clippping"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".RippleActivity"
+            android:name=".ui_characteristic.RippleActivity"
             android:label="@string/title_activity_ripple"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ThreadActivity"></activity>
+        <activity android:name=".ThreadActivity" />
+        <activity android:name=".event_distribute.EventDistributeActivity" />
+        <activity android:name=".custom_view.CustomActivity" />
+        <activity android:name=".custom_view.ac.ScrollTopActivity"></activity>
     </application>
 
 </manifest>

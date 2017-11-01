@@ -1,4 +1,4 @@
-package omeng.bbwhm.com.weixin;
+package omeng.bbwhm.com.weixin.ui_characteristic;
 
 import android.graphics.Outline;
 import android.os.Bundle;
@@ -8,6 +8,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.ViewOutlineProvider;
 import android.widget.ImageView;
+
+import omeng.bbwhm.com.weixin.BaseActivity;
+import omeng.bbwhm.com.weixin.R;
 
 public class ClipppingActivity extends BaseActivity {
     private ImageView iv7,iv8;
