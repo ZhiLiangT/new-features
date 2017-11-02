@@ -33,6 +33,7 @@ public class HistogramView extends View {
     private String nameY="X轴";         //Y轴方向名称
     private int hisMax=100;             //柱状图最大高度
     private float titleSize=10;         //柱状体底部title字体大小
+    private int levelNum=5;             //水平线的数量
 
 
     public HistogramView(Context context) {
@@ -57,14 +58,15 @@ public class HistogramView extends View {
         titleSize=typedArray.getDimension(R.styleable.Histogram_View_histogtamTitleSize,titleSize);
         titleColor=typedArray.getColor(R.styleable.Histogram_View_histogtamTitleColor,titleColor);
         lineColor=typedArray.getColor(R.styleable.Histogram_View_histogtamLineColor,lineColor);
+        levelNum=typedArray.getInt(R.styleable.Histogram_View_histogtamLevelNum,5);
 
         paintHis=new Paint(Paint.ANTI_ALIAS_FLAG);
         paintHis.setColor(lineColor);
-        paintHis.setTextSize(20);
+        paintHis.setTextSize(titleSize);
 
         paintTitle=new Paint(Paint.ANTI_ALIAS_FLAG);
         paintTitle.setColor(hisColor);
-        paintTitle.setTextSize(20);
+        paintTitle.setTextSize(titleSize);
 
         jiaData();
     }
@@ -82,15 +84,23 @@ public class HistogramView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        canvas.drawLine(0,0,0,300,paintHis);
-        int lineWid=85*mData.size()+50;
+        canvas.drawLine(40,0,40,300,paintHis);
+        int lineWid=85*mData.size()+90;
         canvas.drawLine(0,300,lineWid,300,paintHis);
-        paintHis.setColor(titleColor);
+        paintHis.setColor(0xFF393936);
+        paintHis.setTextAlign(Paint.Align.RIGHT);
+        for (int i=0;i<levelNum;i++){
+            canvas.drawLine(40,300/levelNum*i,lineWid,300/levelNum*i,paintHis);
+            if (i!=0){
+                canvas.drawText(200-i*200/levelNum+"",35,300/levelNum*i+8,paintHis);
+            }
+        }
         paintHis.setTextAlign(Paint.Align.CENTER);
+        paintHis.setColor(titleColor);
         for (int i=0;i<mData.size();i++){
-            canvas.drawText(mData.get(i).getName(),85*i+55,320,paintHis);
+            canvas.drawText(mData.get(i).getName(),85*i+95,320,paintHis);
             int hei=mData.get(i).getNumber()*2;
-            canvas.drawRect(85*i+25,300-hei,85*(i+1),300,paintTitle);
+            canvas.drawRect(85*i+65,300-hei,85*(i+1)+40,300,paintTitle);
         }
 
     }

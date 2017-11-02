@@ -8,6 +8,7 @@
         <attr name="histogtamNameX" format="string"/>
         <attr name="histogtamNameY" format="string"/>
         <attr name="histogtamTitleSize" format="dimension"/>
+        <attr name="histogtamLevelNum" format="integer"/>
     </declare-styleable>
     <declare-styleable name="PasswordInputView">
         <attr name="pivBorderColor" format="color"/>
@@ -17,5 +18,8 @@
         <attr name="pivPasswordWidth" format="dimension"/>
         <attr name="pivPasswordRadius" format="dimension"/>
         <attr name="pivPasswordLength" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="LoweImageView">
+        <attr name="ratio" format="float" />
     </declare-styleable>
 </resources>

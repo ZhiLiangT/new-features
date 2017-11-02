@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -29,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
-        android:text="Draw-Path"
+        android:text="柱状图"
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@+id/cus_2" />
 
@@ -39,12 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@+id/cus_3"
-        android:text="Button" />
-    <omeng.bbwhm.com.weixin.custom_view.view.HistogramView
-        android:id="@+id/cus_zhifang"
+        android:text="圆饼图" />
 
-        android:layout_below="@+id/cus_4"
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+
 </RelativeLayout>

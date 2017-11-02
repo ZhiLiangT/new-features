@@ -1,17 +1,18 @@
 package omeng.bbwhm.com.weixin.custom_view;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
 import omeng.bbwhm.com.weixin.R;
-import omeng.bbwhm.com.weixin.custom_view.view.HistogramView;
+import omeng.bbwhm.com.weixin.custom_view.ac.HistogramActivity;
+import omeng.bbwhm.com.weixin.custom_view.ac.LoweActivity;
 
 public class CustomActivity extends AppCompatActivity implements View.OnClickListener{
     private Button bt1,bt2,bt3,bt4;
-    private HistogramView view;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +21,6 @@ public class CustomActivity extends AppCompatActivity implements View.OnClickLis
         bt2= (Button) findViewById(R.id.cus_2);
         bt3= (Button) findViewById(R.id.cus_3);
         bt4= (Button) findViewById(R.id.cus_4);
-        view= (HistogramView) findViewById(R.id.cus_zhifang);
         bt1.setOnClickListener(this);
         bt2.setOnClickListener(this);
         bt3.setOnClickListener(this);
@@ -33,10 +33,12 @@ public class CustomActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.cus_1:
                 break;
             case R.id.cus_2:
+                Intent intentLowe=new Intent(this, LoweActivity.class);
+                startActivity(intentLowe);
                 break;
             case R.id.cus_3:
-                Intent itnentDrawPath=new Intent(this,TestDrawActivity.class);
-                startActivity(itnentDrawPath);
+                Intent intentHis=new Intent(this, HistogramActivity.class);
+                startActivity(intentHis);
                 break;
             case R.id.cus_4:
                 break;

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="omeng.bbwhm.com.weixin">
+
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
@@ -55,9 +56,10 @@
         <activity android:name=".custom_view.CustomActivity" />
         <activity android:name=".custom_view.ac.ScrollTopActivity" />
         <activity android:name=".img_effect.ImgEffectActivity" />
-        <activity android:name=".custom_view.TestDrawActivity" />
         <activity android:name=".file_manage.FileManageActivity" />
-        <activity android:name=".file_manage.ResourceListActivity"></activity>
+        <activity android:name=".file_manage.ResourceListActivity" />
+        <activity android:name=".custom_view.ac.HistogramActivity" />
+        <activity android:name=".custom_view.ac.LoweActivity"></activity>
     </application>
 
 </manifest>
