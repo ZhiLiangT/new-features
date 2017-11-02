@@ -64,5 +64,13 @@
         android:layout_alignTop="@+id/bt5"
         android:text="图片处理" />
 
+    <Button
+        android:id="@+id/bt7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/bt3"
+        android:layout_alignTop="@+id/bt6"
+        android:text="文件管理" />
+
 
 </RelativeLayout>

@@ -7,13 +7,14 @@ import android.widget.Button;
 
 import omeng.bbwhm.com.weixin.custom_view.CustomActivity;
 import omeng.bbwhm.com.weixin.event_distribute.EventDistributeActivity;
+import omeng.bbwhm.com.weixin.file_manage.FileManageActivity;
 import omeng.bbwhm.com.weixin.img_effect.ImgEffectActivity;
 import omeng.bbwhm.com.weixin.ui_characteristic.ClipppingActivity;
 import omeng.bbwhm.com.weixin.ui_characteristic.RippleActivity;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener{
 
-    private Button bt1,bt2,bt3,bt4,bt5,bt6;
+    private Button bt1,bt2,bt3,bt4,bt5,bt6,bt7;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,12 +26,14 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
         bt4= (Button) findViewById(R.id.bt4);
         bt5= (Button) findViewById(R.id.bt5);
         bt6= (Button) findViewById(R.id.bt6);
+        bt7= (Button) findViewById(R.id.bt7);
         bt1.setOnClickListener(this);
         bt2.setOnClickListener(this);
         bt3.setOnClickListener(this);
         bt4.setOnClickListener(this);
         bt5.setOnClickListener(this);
         bt6.setOnClickListener(this);
+        bt7.setOnClickListener(this);
     }
 
 
@@ -56,6 +59,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
             case R.id.bt6:
                 Intent intentImg=new Intent(this, ImgEffectActivity.class);
                 startActivity(intentImg);
+                break;
+            case R.id.bt7:
+                Intent intentFile=new Intent(this, FileManageActivity.class);
+                startActivity(intentFile);
                 break;
         }
     }
