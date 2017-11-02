@@ -27,7 +27,9 @@
         <activity android:name=".ThreadActivity" />
         <activity android:name=".event_distribute.EventDistributeActivity" />
         <activity android:name=".custom_view.CustomActivity" />
-        <activity android:name=".custom_view.ac.ScrollTopActivity"></activity>
+        <activity android:name=".custom_view.ac.ScrollTopActivity" />
+        <activity android:name=".img_effect.ImgEffectActivity" />
+        <activity android:name=".custom_view.TestDrawActivity"></activity>
     </application>
 
 </manifest>
