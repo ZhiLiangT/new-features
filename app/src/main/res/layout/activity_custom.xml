@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/black"
+
+
     tools:context="omeng.bbwhm.com.weixin.custom_view.CustomActivity">
 
 
@@ -41,6 +42,10 @@
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@+id/cus_3"
         android:text="圆饼图" />
+    <omeng.bbwhm.com.weixin.custom_view.view.TestCusView
+        android:layout_below="@+id/cus_4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 
 </RelativeLayout>
