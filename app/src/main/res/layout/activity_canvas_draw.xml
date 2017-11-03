@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="omeng.bbwhm.com.weixin.custom_view.ac.TextDrawActivity">
-    <omeng.bbwhm.com.weixin.custom_view.view.DrawTextView
+    tools:context="omeng.bbwhm.com.weixin.custom_view.ac.CanvasDrawActivity">
+    <omeng.bbwhm.com.weixin.custom_view.view.DrawCanvasView
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

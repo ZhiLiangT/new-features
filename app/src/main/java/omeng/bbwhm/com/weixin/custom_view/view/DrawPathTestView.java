@@ -44,8 +44,8 @@ public class DrawPathTestView extends View {
 //        path.arcTo(400, 200, 600, 400, -180, 225, false);
 //        path.lineTo(400, 542);
         path.moveTo(100, 100);
-        path.lineTo(200, 100);
-        path.lineTo(150, 150);
+        path.quadTo(200, 100,150,200);
+        path.quadTo(150, 150,300,300);
         path.close();
         canvas.drawPath(path,paint);
         Bitmap bitmap= BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher);

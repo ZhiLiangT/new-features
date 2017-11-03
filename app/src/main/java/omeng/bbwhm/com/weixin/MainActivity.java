@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import omeng.bbwhm.com.weixin.animate.AnimateActivity;
 import omeng.bbwhm.com.weixin.custom_view.CustomActivity;
 import omeng.bbwhm.com.weixin.event_distribute.EventDistributeActivity;
 import omeng.bbwhm.com.weixin.file_manage.FileManageActivity;
@@ -14,7 +15,7 @@ import omeng.bbwhm.com.weixin.ui_characteristic.RippleActivity;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener{
 
-    private Button bt1,bt2,bt3,bt4,bt5,bt6,bt7;
+    private Button bt1,bt2,bt3,bt4,bt5,bt6,bt7,bt8;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +28,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
         bt5= (Button) findViewById(R.id.bt5);
         bt6= (Button) findViewById(R.id.bt6);
         bt7= (Button) findViewById(R.id.bt7);
+        bt8= (Button) findViewById(R.id.bt8);
         bt1.setOnClickListener(this);
         bt2.setOnClickListener(this);
         bt3.setOnClickListener(this);
@@ -34,6 +36,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
         bt5.setOnClickListener(this);
         bt6.setOnClickListener(this);
         bt7.setOnClickListener(this);
+        bt8.setOnClickListener(this);
     }
 
 
@@ -63,6 +66,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
             case R.id.bt7:
                 Intent intentFile=new Intent(this, FileManageActivity.class);
                 startActivity(intentFile);
+                break;
+            case R.id.bt8:
+                Intent intentAnimator=new Intent(this, AnimateActivity.class);
+                startActivity(intentAnimator);
                 break;
         }
     }

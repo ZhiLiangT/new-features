@@ -51,7 +51,6 @@
             android:name=".ui_characteristic.RippleActivity"
             android:label="@string/title_activity_ripple"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ThreadActivity" />
         <activity android:name=".event_distribute.EventDistributeActivity" />
         <activity
             android:name=".custom_view.CustomActivity"
@@ -62,7 +61,10 @@
         <activity android:name=".file_manage.ResourceListActivity" />
         <activity android:name=".custom_view.ac.HistogramActivity" />
         <activity android:name=".custom_view.ac.LoweActivity" />
-        <activity android:name=".custom_view.ac.TextDrawActivity"></activity>
+        <activity android:name=".custom_view.ac.TextDrawActivity" />
+        <activity android:name=".custom_view.ac.CanvasDrawActivity" />
+        <activity android:name=".custom_view.ac.GroupViewActivity" />
+        <activity android:name=".animate.AnimateActivity"></activity>
     </application>
 
 </manifest>

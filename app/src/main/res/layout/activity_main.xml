@@ -71,6 +71,13 @@
         android:layout_alignStart="@+id/bt3"
         android:layout_alignTop="@+id/bt6"
         android:text="文件管理" />
-
+    <Button
+        android:id="@+id/bt8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="属性动画"
+        android:layout_alignBaseline="@+id/bt7"
+        android:layout_alignBottom="@+id/bt7"
+        android:layout_toEndOf="@+id/bt7" />
 
 </RelativeLayout>
