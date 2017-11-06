@@ -12,7 +12,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Clipping"
-        android:background="@drawable/ripple_color"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
         app:layout_constraintRight_toRightOf="parent"
@@ -79,5 +78,36 @@
         android:layout_alignBaseline="@+id/bt7"
         android:layout_alignBottom="@+id/bt7"
         android:layout_toEndOf="@+id/bt7" />
+
+    <Button
+        android:id="@+id/bt9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/bt5"
+        android:text="Dagger2" />
+
+    <Button
+        android:id="@+id/bt10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/bt6"
+        android:layout_below="@+id/bt6"
+        android:text="RxJava" />
+    <Button
+        android:id="@+id/bt11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retrofit"
+        android:layout_below="@+id/bt7"
+        android:layout_alignStart="@+id/bt7" />
+
+    <Button
+        android:id="@+id/bt12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/bt9"
+        android:text="数据库" />
 
 </RelativeLayout>

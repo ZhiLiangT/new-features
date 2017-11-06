@@ -64,7 +64,12 @@
         <activity android:name=".custom_view.ac.TextDrawActivity" />
         <activity android:name=".custom_view.ac.CanvasDrawActivity" />
         <activity android:name=".custom_view.ac.GroupViewActivity" />
-        <activity android:name=".animate.AnimateActivity"></activity>
+        <activity android:name=".animate.AnimateActivity" />
+        <activity android:name=".dagger2.Dagger2TestActivity" />
+        <activity android:name=".rxjava_or_rxandroid.RxJavaTestActivity" />
+        <activity android:name=".retrofit2.RetrofitTestActivity" />
+        <activity android:name=".rxjava_or_rxandroid.ac.RxTestActivity" />
+        <activity android:name=".sqlite_test.SQLiteTestActivity"></activity>
     </application>
 
 </manifest>

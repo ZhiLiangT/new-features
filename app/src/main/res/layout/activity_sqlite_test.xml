@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="omeng.bbwhm.com.weixin.sqlite_test.SQLiteTestActivity">
+
+    <EditText
+        android:id="@+id/db_et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="用户名" />
+
+    <EditText
+        android:id="@+id/db_et_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/db_et_name"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="年龄" />
+
+    <Button
+        android:id="@+id/db_bt_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/db_et_age"
+        android:layout_marginTop="18dp"
+        android:text="增加" />
+
+    <Button
+        android:id="@+id/db_bt_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除"
+        android:layout_alignBaseline="@+id/db_bt_add"
+        android:layout_alignBottom="@+id/db_bt_add"
+        android:layout_toEndOf="@+id/db_bt_add"
+        android:layout_marginStart="15dp" />
+
+    <Button
+        android:id="@+id/db_bt_upd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/db_bt_del"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/db_bt_del"
+        android:text="修改" />
+
+    <Button
+        android:id="@+id/db_bt_sel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/db_bt_upd"
+        android:text="查看" />
+
+    <TextView
+        android:id="@+id/db_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/db_bt_del"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="143dp"
+        android:text="内容" />
+
+    <Button
+        android:id="@+id/db_bt_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/db_bt_add"
+        android:text="创建" />
+
+    <EditText
+        android:id="@+id/db_et_sql"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/db_bt_create"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="SQL语句"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/db_bt_zhixing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/db_et_sql"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/db_et_sql"
+        android:text="执行SQL语句" />
+</RelativeLayout>

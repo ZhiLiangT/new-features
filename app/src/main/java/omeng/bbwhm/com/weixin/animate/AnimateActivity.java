@@ -3,17 +3,17 @@ package omeng.bbwhm.com.weixin.animate;
 import android.animation.ValueAnimator;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
+import android.widget.TextView;
 
 import omeng.bbwhm.com.weixin.R;
 import omeng.bbwhm.com.weixin.animate.view.SportsLinearView;
 import omeng.bbwhm.com.weixin.animate.view.SportsView;
 
 public class AnimateActivity extends AppCompatActivity {
-    //Sample08ObjectAnimatorView animatorView;
+
     SportsView sportsView;
     SportsLinearView sportsLinearView;
-    View textView;
+    TextView textView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +26,7 @@ public class AnimateActivity extends AppCompatActivity {
     private void initView() {
         sportsView= (SportsView) findViewById(R.id.anim_samp_2);
         sportsLinearView= (SportsLinearView) findViewById(R.id.anim_samp_3);
-        textView= (View) findViewById(R.id.textView);
+        textView= (TextView) findViewById(R.id.textView);
     }
 
     private void initData() {
