@@ -65,10 +65,10 @@
         android:id="@+id/db_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/db_bt_del"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="143dp"
-        android:text="内容" />
+        android:text="内容"
+        android:layout_marginBottom="106dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/db_bt_create"
@@ -97,4 +97,23 @@
         android:layout_marginStart="15dp"
         android:layout_toEndOf="@+id/db_et_sql"
         android:text="执行SQL语句" />
+
+    <EditText
+        android:id="@+id/db_et_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/db_bt_selAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/db_et_sql"
+        android:layout_alignStart="@+id/db_bt_del"
+        android:text="查看全部" />
+
 </RelativeLayout>

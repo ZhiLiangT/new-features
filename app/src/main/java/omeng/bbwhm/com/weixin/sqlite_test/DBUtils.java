@@ -1,7 +1,14 @@
 package omeng.bbwhm.com.weixin.sqlite_test;
 
+import android.content.ContentValues;
 import android.content.Context;
-import android.database.sqlite.SQLiteDatabase;
+import android.database.Cursor;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import omeng.bbwhm.com.weixin.retrofit2.bean.User;
+
 
 /**
  * Created by tianzl on 2017/11/6.
@@ -9,33 +16,45 @@ import android.database.sqlite.SQLiteDatabase;
 
 public class DBUtils {
 
-    public static MySQLiteDatabase database;
+    public static DBHelper database;
 
-    private Context context;
+    public static void addUser(Context context,String name,String age){
 
-    public DBUtils(Context context){
-        this.context = context;
-        database=new MySQLiteDatabase(context);
+        ContentValues cv = new ContentValues();
+        cv.put(DBHelper.FIELD_NAME, name);
+        cv.put(DBHelper.FIELD_AGE,age);
+        database.insert(DBHelper.TABLE_NAME,cv);
     }
 
-    public static void addUser(String name,int age){
-        SQLiteDatabase db=database.getWritableDatabase();
-        db.beginTransaction();
-        db.execSQL("insert into User (Name,age) value("+name+","+age+")");
-        db.setTransactionSuccessful();
+    public static void delUser(Context context,int id){
+
+        database.deleteRecode(DBHelper.TABLE_NAME,"id=?",new String[]{""+id});
     }
 
-    public static void delUser(int id){
+    public static void updateUser(Context context,int id,String name,String age){
 
-    }
-    public static void Update(int id,String name,int age){
 
     }
 
     public static void selUser(String sql){
 
     }
-    public static void selAllUser(){
+    public static List<User> selAllUser(Context context){
+
+        List<User> list=new ArrayList<>();
+        String[] columns = {DBHelper.FIELD_NAME,DBHelper.FIELD_AGE};
+        Cursor c=database.selectRecode(DBHelper.TABLE_NAME,columns,null,null,null,null,null);
+        if (c!=null&& c.getCount()>0){
+            while (c.moveToNext()){
+                User user=new User();
+                String name = c.getColumnName(0);
+                String  age = c.getString(1);
+                user.setName(name);
+                user.setAge(age);
+                list.add(user);
+            }
+        }
+        return list;
 
     }
 
