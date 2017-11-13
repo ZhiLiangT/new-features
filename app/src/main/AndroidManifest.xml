@@ -69,7 +69,8 @@
         <activity android:name=".rxjava_or_rxandroid.RxJavaTestActivity" />
         <activity android:name=".retrofit2.RetrofitTestActivity" />
         <activity android:name=".rxjava_or_rxandroid.ac.RxTestActivity" />
-        <activity android:name=".sqlite_test.SQLiteTestActivity"></activity>
+        <activity android:name=".sqlite_test.SQLiteTestActivity" />
+        <activity android:name=".mediaplayer.AudioPlayActivity"></activity>
     </application>
 
 </manifest>

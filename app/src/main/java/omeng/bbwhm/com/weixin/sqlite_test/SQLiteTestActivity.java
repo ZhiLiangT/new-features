@@ -19,7 +19,7 @@ import omeng.bbwhm.com.weixin.retrofit2.bean.User;
 
 public class SQLiteTestActivity extends AppCompatActivity implements View.OnClickListener{
     private EditText etName,etAge,etSQL,etId;
-    private Button btAdd,btDel,btUpd,btSel,btCreate,btZhiXing,btAll;
+    private Button btAdd,btDel,btUpd,btSel,btCreate,btZhiXing,btAll,btDelAll;
     private TextView tvContent;
     private String name,age,id;
     private DBHelper dbHelper;
@@ -44,6 +44,7 @@ public class SQLiteTestActivity extends AppCompatActivity implements View.OnClic
         btCreate= (Button) findViewById(R.id.db_bt_create);
         btZhiXing= (Button) findViewById(R.id.db_bt_zhixing);
         btAll= (Button) findViewById(R.id.db_bt_selAll);
+        btDelAll= (Button) findViewById(R.id.db_bt_delAll);
         btAdd.setOnClickListener(this);
         btDel.setOnClickListener(this);
         btUpd.setOnClickListener(this);
@@ -51,6 +52,7 @@ public class SQLiteTestActivity extends AppCompatActivity implements View.OnClic
         btCreate.setOnClickListener(this);
         btZhiXing.setOnClickListener(this);
         btAll.setOnClickListener(this);
+        btDelAll.setOnClickListener(this);
         dbHelper=new DBHelper(this,"test.db",null,1);
         dbHelper.getWritableDatabase();
     }
@@ -78,9 +80,13 @@ public class SQLiteTestActivity extends AppCompatActivity implements View.OnClic
             case R.id.db_bt_selAll:
                 selAll();
                 break;
+            case R.id.db_bt_delAll:
+                delAll();
+                break;
 
         }
     }
+
 
     private void add() {
         SQLiteDatabase db=dbHelper.getWritableDatabase();
@@ -122,6 +128,11 @@ public class SQLiteTestActivity extends AppCompatActivity implements View.OnClic
             }
         }
         tvContent.setText(list.toString());
+    }
+    public void delAll(){
+        SQLiteDatabase db=dbHelper.getWritableDatabase();
+        id=etId.getText().toString();
+        db.delete(DBHelper.TABLE_NAME,null,null);
     }
 
 }

@@ -116,4 +116,12 @@
         android:layout_alignStart="@+id/db_bt_del"
         android:text="查看全部" />
 
+    <Button
+        android:id="@+id/db_bt_delAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除全部"
+        android:layout_above="@+id/db_bt_zhixing"
+        android:layout_alignStart="@+id/db_bt_upd" />
+
 </RelativeLayout>

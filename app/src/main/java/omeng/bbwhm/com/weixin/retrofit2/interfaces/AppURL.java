@@ -33,4 +33,5 @@ public interface AppURL {
     @FormUrlEncoded
     @POST("TestPost")
     Call<List<User>> updateUser(@Field("name")String name,@Field("age")int age);
+
 }
